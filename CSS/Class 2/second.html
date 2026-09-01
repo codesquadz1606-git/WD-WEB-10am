@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap" rel="stylesheet">
+</head>
+<style>
+    .border {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+
+        /* border-width: 10px;
+        border-color: red;
+        border-style: solid; */
+
+        /* Shorthand */
+        border: solid 10px yellow;
+
+        /* border-radius: 30px; */
+
+        /* border-top-left-radius: 30px;
+        border-top-right-radius: 130px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 50px; */
+
+        /* Shorthand */
+        border-radius: 100px 0px 100px 0px;
+    }
+
+    .para {
+        /* 1 rem = 16px */
+        font-size: 3rem;
+        /* font-weight: bolder; */
+        font-style: italic;
+        /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: "Betania Patmos", cursive;
+
+        text-decoration: underline;
+        /* color: green; */
+    }
+
+    .box{
+        width: 300px;
+        height: 300px;
+        background-color: green;
+
+        /* position: absolute; */
+        /* position: relative; */
+        /* position: fixed; */
+        position: sticky;
+        top: 30px;
+        left: 50px;
+    }
+</style>
+
+<body>
+    <!-- 
+        What is displays?
+        Display are of five types:
+        -> inline
+        -> block
+        -> inline-block
+        -> flex
+        -> grid
+    -->
+
+    <!-- Here we have converted inline tag to block tag. -->
+    <span style="
+        background-color: red;
+        display: block;
+    ">
+        Hello
+    </span>
+
+    <!-- Here we have converted block tag into inline tag -->
+    <p style="
+        background-color: blue;
+        display: inline;
+    ">
+        hii
+    </p>
+
+    <div class="box"></div>
+
+    <br>
+
+    <!-- 
+        In inline-block , the content is inline within the first line , as soon as content is in secondline it is block tag.
+    -->
+    <span style="
+        background-color: yellow;
+        display: inline-block;
+    ">
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+        My name is Ayush
+    </span>
+
+    <hr>
+
+    <!-- 
+        What is borders?
+
+    -->
+
+    <div class="border">
+
+    </div>
+
+    <!-- 
+        How to use fonts & add the external fonts?
+
+    -->
+
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias repellat minima eveniet odit ratione ipsam
+        quia, quae, eaque fuga earum totam? Architecto, natus quasi! Enim qui quas consectetur quod vero deserunt
+        possimus dolor est accusamus unde alias omnis veritatis magni perferendis, similique eligendi ipsa esse,
+        <span style="color: red;">cupiditate quis quasi. Minus non, dolore totam quibusdam rem rerum architecto incidunt nostrum, qui maiores</span>
+        voluptate neque eum cumque dolores porro vel voluptas ex magni magnam delectus reiciendis! Repudiandae obcaecati
+        consequuntur commodi rerum non eligendi itaque, corrupti exercitationem, qui provident, quam harum voluptatibus
+        libero. Eos voluptatem perspiciatis velit ex amet necessitatibus tenetur nulla, perferendis quam quia quasi
+        rerum minus. Quibusdam deserunt odio ullam maiores, animi cumque accusantium ut saepe iusto quidem qui beatae
+        iste tenetur perferendis accusamus consequuntur neque quod excepturi quae iure. Dolor consequatur placeat
+        voluptatum necessitatibus omnis maiores, fuga laboriosam non ex, laudantium voluptates consectetur aliquam
+        cumque sint deleniti quibusdam ad laborum. Vel atque eum odit non quia dignissimos harum rem autem. Cumque
+        nihil, necessitatibus ab modi perferendis dolorem libero eveniet corporis aliquam assumenda quae, debitis
+        dolorum suscipit minima, eius pariatur numquam? Vel corrupti nisi dicta culpa repellat velit, in quasi corporis
+        quo id atque voluptas tempore dignissimos et consequatur maxime voluptatibus!
+    </p>
+
+    <hr>
+
+    <!-- 
+        Types of positions :
+        -> static : by default position , we cannot move any element from their position
+        -> absolute : it leaves his space & moves from parent space.
+        -> relativev: it moves from its own space.
+        -> fixed : 
+        -> sticky
+    -->
+
+    <!-- <div class="box"></div> -->
+</body>
+
+</html>

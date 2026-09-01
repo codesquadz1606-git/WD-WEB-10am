@@ -1,0 +1,43 @@
+/* id Selector call */
+#new{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* class Selector call */
+.common{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+}
+
+/* universal Selector call */
+*{
+    background-color: black;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* tagname Selector call */
+p{
+    background-color: red;
+}
+
+.text{
+    background-color: blue;
+    /* padding: 20px;
+    margin: 20px; */
+
+    /* padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 100px; */
+
+    /* Padding Shorthand 1 : top right bottom left */
+    /* padding: 20px 100px 50px 0px; */
+
+    /* Padding Shorthand 2 : top-bottom left-right */  
+    padding: 50px 200px;
+}

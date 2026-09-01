@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        What is table?
+        Table is collection rows & columns.Data is inserted in row format
+
+        table tag -> tr tag (table row ) -> td/th tag (table data / head)
+
+        td & th is used for columns.
+        the diffrence of td & th is td stores data in normal format , whereas th stores data in heading format & in center align.
+
+        in table tag we have two attributes : 
+        -> cellspacing : It measures the space between outer cell & inner cell
+        -> cellpadding : It measures the space between text & cell
+    -->
+
+    <table border="1" cellspacing="0" cellpadding="30">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Avinash</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mansi</td>
+            <td>21</td>
+            <td>Female</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>No</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zuckerberg</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 
+        How to merge the rows & columns of the table?
+        -> rowspan : where we see the row is merging / vertical merge
+        -> colspan : where we see columns are merging / Horizontal merge
+    -->
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Student Name</th>
+            <th colspan="3">Labs</th>
+            <th rowspan="2">Avg</th>
+        </tr>
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Lab 1</th>
+            <th>Lab 2</th>
+            <th>Lab 3</th>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>Rosenberg</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>Rosenberg</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <td>Sol</td>
+            <td>Rosenberg</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Summary</th>
+            <th>Avg</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th>Min</th>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+    </table>
+</body>
+</html>

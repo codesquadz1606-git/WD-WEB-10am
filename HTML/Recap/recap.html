@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap Class</title>
+</head>
+<body>
+    <!-- 
+        Why we use meta tag?
+        meta tag is used for SEO
+        meta tag is used for responsive website
+        meta tag is used for encoding
+    -->
+
+    <!-- Heading Tag : h1 to h6 -->
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+
+    <hr>
+
+    <!-- Media Tag : img , audio , video -->
+    <img width="400px" src="assets/Image.png" alt="Something Wrong">
+    <audio controls src="assets/Audio.mp3"></audio>
+    <video controls width="400px" src="assets/Video.mp4"></video>
+
+    <!-- 
+        Inline Tag VS Block Tag
+
+        Inline tag means where it takes space according to their content.
+        examples : a , span , img ,audio, video ,......
+
+        Block Tag means it takes full row space , here content doesn't matter.
+        examples : h1 to h6 , div , p , li ,........
+    -->
+
+    <hr>
+    <!-- 
+        a tag : Linking tag : Creating a hyperlink on a text.
+    -->
+
+    <a href="https://www.facebook.com">This is link for facebook</a> <br>
+    <a href="https://www.instagram.com">This is link for instagram</a> <br>
+    <a href="../Class 1/first.html" target="_blank">First Class</a>
+
+    <hr>
+    <!-- 
+        Iframe tag : It creates the window on your existing page.
+    -->
+
+    <iframe src="../Class 1/first.html" width="700px" height="400px" frameborder="50"></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.022291355817!2d77.37835100000001!3d28.629094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef60526c0929%3A0xe3abc75d65b999ff!2sCodeSquadz%20-%20IT%20Training%20by%20Manish%20Bhatia%20Sir!5e0!3m2!1sen!2sin!4v1787224380626!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i08p2KtoNiM?si=kUJ0ONcCfrxTFBhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <hr>
+
+    <!-- 
+        What is List?
+        List are of two types
+        i. Ordered List : 1,I,i,A,a : Here it is denoted by ol
+        ii. Unordered List : square , disc , circle : Here it is denoted by ul
+
+        Here list items is denoted by li tag
+
+        ol/ul -> li tag
+    -->
+
+    <ol type="I" start="20">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <ul type="disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- 
+        nested list : list inside list inside list....
+    -->
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Nested Item 2.1</li>
+                <li>Nested Item 2.2
+                    <ol>
+                        <li>Nested Item 2.2.1</li>
+                        <li>Nested Item 2.2.2</li>
+                    </ol>
+                </li>
+                <li>Nested Item 2.3</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+    </ol>
+</body>
+</html>
