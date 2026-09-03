@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    border-bottom: 2px solid rgb(83, 83, 83);
+    padding-bottom: 35px;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 34px;
+}
+
+.navbar{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar ul{
+    margin-top: 30px;
+}
+
+.navbar ul li{
+    display: inline;
+    font-size: 1.2rem;
+    margin-right: 13px;
+}
+
+.btns{
+    position: absolute;
+    top: 30px;
+    right: 34px;
+}
+
+.btn1,.btn2{
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.btn1{
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+}
+
+.btn2{
+    padding: 8px 20px;
+    border: 2px solid white;
+}
+
+.left-content{
+    width: 50%;
+    height: 496px;
+    display: inline;
+    float: left;
+}
+
+.content{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.text{
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+
+.para{
+    margin-top: 10px;
+    font-size: 2.4rem;
+}
+
+input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.email{
+    border: none;
+    background-color: rgb(35, 34, 34);
+    margin: 10px 0px;
+}
+
+.email::placeholder{
+    padding-left: 10px;
+}
+
+.submit{
+    background-color: blue;
+    border: none;
+}
+
+
+.right-content{
+    width: 50%;
+    height: 496px;
+    display: inline;
+    float: right;
+}
+
+.img-box{
+    width: 450px;
+    height: 400px;
+    border: 10px solid blue;
+    margin-top: 40px;
+    margin-left: 80px;
+
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    background-position: center;
+}
