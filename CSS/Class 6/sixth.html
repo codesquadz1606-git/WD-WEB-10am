@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        position: relative;
+        animation: movebox 3s ease-in-out infinite;
+    }
+
+    @keyframes movebox {
+        0%{
+            top: 0px;
+            left: 0px;
+
+            transform: rotate(0deg);
+        }
+        
+        25%{
+            top: 300px;
+            left: 0px;
+            transform: rotate(90deg);
+            
+            
+        }
+        50%{
+            top: 300px;
+            left: 300px;
+            transform: rotate(180deg);
+        }
+        75%{
+            top: 0px;
+            left: 300px;
+            transform: rotate(270deg);
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+            transform: rotate(360deg);
+        }
+    }
+
+    .carousel{
+        width: 90%;
+        height: 650px;
+        margin: auto;
+        border-radius: 80px;
+
+        animation: carousel 24s ease-in-out infinite alternate;
+    }
+
+    @keyframes carousel {
+        0%{
+            background-image:url(./images/1.jpg);
+            background-size:cover;
+            background-position:center
+        }
+        30%{
+            background-image:url(./images/2.jpg);
+            background-size:cover;
+            background-position:center
+        }
+        60%{
+            background-image:url(./images/3.jpg);
+            background-size:cover;
+            background-position:center
+        }
+        100%{
+            background-image:url(./images/4.jpg);
+            background-size:cover;
+            background-position:center
+        }
+    }
+
+    .carousel1{
+        width: 90%;
+        height: 850px;
+        margin: auto;
+        border-radius: 80px;
+        overflow: hidden;
+    }
+
+    .slides{
+        display: flex;
+        height: 100%;
+        width: 400%;
+        animation: slides 12s ease-in-out infinite;
+    }
+
+    .slide{
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .slide img{
+        width: 40%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    @keyframes slides {
+        0%, 20%{
+            transform: translateX(0);
+        }
+
+        25%, 45%{
+            transform: translateX(-100%);
+        }
+
+        50%, 70%{
+            transform: translateX(-200%);
+        }
+
+        75%, 95%{
+            transform: translateX(-300%);
+        }
+
+        100%{
+            transform: translateX(0);
+        }
+}
+
+.screen-1,.screen-2,.screen-3,.screen-4{
+    display: none;
+}
+
+@media (min-width:1480px) {
+    .screen-1{
+        display: block;
+    }
+}
+
+@media (min-width:1260px) and (max-width:1479px) {
+    .screen-2{
+        display: block;
+    }
+}
+
+@media (min-width:980px) and (max-width:1259px) {
+    .screen-3{
+        display: block;
+    }
+}
+
+@media (max-width:979px) {
+    .screen-4{
+        display: block;
+    }
+}
+</style>
+<body>
+    <!-- 
+        Animation
+    -->
+
+    <!-- <div class="box">
+
+    </div> -->
+
+    <!-- <div class="carousel">
+
+    </div> -->
+
+    <!-- <div class="carousel1">
+        <div class="slides">
+            <div class="slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/4.jpg" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 
+        1480 px & >
+
+        1260px to 1479px
+
+        980px to 1259px
+
+        576px to 980px
+    -->
+
+    <div class="conatiner">
+        <div class="screen-1">
+            <h1>Highest Screen Size</h1>
+        </div>
+        <div class="screen-2">
+            <h1>Smal Laptop Screen Size</h1>
+        </div>
+        <div class="screen-3">
+            <h1>Tablet Or Ipad Screen Size</h1>
+        </div>
+        <div class="screen-4">
+            <h1>Phone Screen Size</h1>
+        </div>
+    </div>
+</body>
+</html>
