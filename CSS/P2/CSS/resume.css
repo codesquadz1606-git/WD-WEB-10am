@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.navbar ul li a:hover{
+    color: blue;
+}
+
+main{
+    width: 100%;
+    height: 3000px;
+    background-color: #E6DACE;
+}
+
+.wrapper{
+    max-width: 45%;
+    height: 3000px;
+    margin: auto;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px;
+    align-items: center;
+}
+
+.re-box{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+.re{
+    font-size: 1.5rem;
+}
+
+.exp-cv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.cv{
+    padding: 10px 30px;
+    font-weight: bolder;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+
+.cv:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: black;
+}
+
+.detail-card{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.left-detail{
+    width: 35%;
+    height: 400px;
+}
+
+.right-detail{
+    width: 65%;
+    height: 400px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.copyright-section{
+    width: 15%;
+}
+
+.contact-details-section{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contact-details-section .follow .footer-icons img{
+    width: 20px;
+}
